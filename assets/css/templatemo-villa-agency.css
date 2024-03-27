@@ -740,26 +740,26 @@ Banner Style
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 50px 15% 250px 15%;
+  padding: 50px 15% 200px 15%;
   margin-top: 0px;
   display: flex;
   justify-content: center;
 }
 
 .main-banner .item-1 {
-  background-image: url(../images/21141-CAM-007.JPG);
+  background-image: url(https://vankata.sirv.com/Images/21141-CAM-007.JPG);
   background-color: rgb(101, 101, 101);
   background-blend-mode:soft-light;
 }
 
 .main-banner .item-2 {
-  background-image: url(../images/21141-CAM-003.jpg);
+  background-image: url(https://vankata.sirv.com/Images/21141-CAM-003.jpg);
   background-color: rgb(101, 101, 101);
   background-blend-mode:soft-light;
 }
 
 .main-banner .item-3 {
-  background-image: url(../images/21141-CAM-008.jpg);
+  background-image: url(https://vankata.sirv.com/Images/21141-CAM-008.jpg);
   background-color: rgb(101, 101, 101);
   background-blend-mode:soft-light;
 }
