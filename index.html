@@ -383,7 +383,25 @@ document.querySelectorAll('.video-wrapper').forEach(box => {
 <br>
 <br>
   <div> 
-  <h2 style="color: #ece809; text-align: center;">| Начало Етап 2</h2>
+  <h2 style="color: #ece809; text-align: center;">| Етап 2</h2>
+    <div class="video-wrapper" data-video="YOUR-SECOND-VIDEO-ID">
+    <img src="https://i.ytimg.com/vi/YOUR-SECOND-VIDEO-ID/maxresdefault.jpg"
+         alt="Video Thumbnail"
+         onerror="this.src='https://i.ytimg.com/vi/YOUR-SECOND-VIDEO-ID/hqdefault.jpg'">
+    <div class="play-btn"></div>
+</div>
+    <script>
+document.querySelectorAll('.video-wrapper').forEach(box => {
+    box.addEventListener('click', () => {
+        const videoId = box.dataset.video;
+
+        box.innerHTML =
+            `<iframe src="https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1"
+                     allow="autoplay; encrypted-media"
+                     allowfullscreen></iframe>`;
+    });
+});
+</script>
 </div>
 <br>
 <br>
