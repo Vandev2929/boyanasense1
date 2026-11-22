@@ -253,18 +253,12 @@ https://templatemo.com/tm-591-villa-agency
           }
           </script>
           <br>
-           <div class="video-content">
-            <div >
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="" >
-                    <img src="https://i.postimg.cc/T3FdcX0b/Screenshot-20251001-220902-Chrome.jpg" alt="";>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+           <div class="video-wrapper" data-video="vEFJ6HOiN-w">
+    <img src="https://i.ytimg.com/vi/vEFJ6HOiN-w/maxresdefault.jpg"
+         alt="Video Thumbnail"
+         onerror="this.src='https://i.ytimg.com/vi/vEFJ6HOiN-w/hqdefault.jpg'">
+    <div class="play-btn"></div>
+</div>
           <br>
         </div>
         
@@ -366,22 +360,25 @@ https://templatemo.com/tm-591-villa-agency
 </head>
 <body>
 
-<div class="video-wrapper" id="yt-box">
-  <img src="https://i.ytimg.com/vi/vEFJ6HOiN-w/maxresdefault.jpg"
-       alt="Video Thumbnail"
-       onerror="this.src='https://i.ytimg.com/vi/vEFJ6HOiN-w/hqdefault.jpg'">
-  <div class="play-btn"></div>
+<div class="video-wrapper" data-video="YOUR-SECOND-VIDEO-ID">
+    <img src="https://i.ytimg.com/vi/YOUR-SECOND-VIDEO-ID/maxresdefault.jpg"
+         alt="Video Thumbnail"
+         onerror="this.src='https://i.ytimg.com/vi/YOUR-SECOND-VIDEO-ID/hqdefault.jpg'">
+    <div class="play-btn"></div>
 </div>
 
 <script>
-  const box = document.getElementById('yt-box');
-  box.addEventListener('click', () => {
-    box.innerHTML =
-      `<iframe src="https://www.youtube-nocookie.com/embed/vEFJ6HOiN-w?autoplay=1"
-               allow="autoplay; encrypted-media"
-               allowfullscreen></iframe>`;
-  });
-</script
+document.querySelectorAll('.video-wrapper').forEach(box => {
+    box.addEventListener('click', () => {
+        const videoId = box.dataset.video;
+
+        box.innerHTML =
+            `<iframe src="https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1"
+                     allow="autoplay; encrypted-media"
+                     allowfullscreen></iframe>`;
+    });
+});
+</script>
   <br>
 <br>
 <br>
